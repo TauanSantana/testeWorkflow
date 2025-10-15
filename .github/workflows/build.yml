@@ -1,0 +1,11 @@
+name: Custom Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rebuild Armbian and Kernel
+        uses: ophub/amlogic-s9xxx-armbian@Armbian_trixie_save_2025.10
