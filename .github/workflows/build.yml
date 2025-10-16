@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Rebuild Armbian and Kernel
         uses: ophub/amlogic-s9xxx-armbian@Armbian_trixie_save_2025.10
-        with:
+
       - name: Metrics embed
         uses: lowlighter/metrics@v3.34
 
