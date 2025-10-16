@@ -10,8 +10,10 @@ jobs:
       - name: Rebuild Armbian and Kernel
         uses: ophub/amlogic-s9xxx-armbian@Armbian_trixie_save_2025.10
         with:
-          armbian_fstype: "armbian_fstype-valor"
-          armbian_size: "armbian_size-valor"
-
       - name: Metrics embed
         uses: lowlighter/metrics@v3.34
+
+      - name: Gosec Security Checker
+        uses: securego/gosec@v2.22.10
+        with:
+          args: "VASCO"
